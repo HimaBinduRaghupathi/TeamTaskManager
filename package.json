@@ -1,0 +1,22 @@
+{
+  "name": "team-task-manager",
+  "version": "1.0.0",
+  "description": "Full-stack Team Task Manager with authentication, project management, and task tracking",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build --prefix frontend",
+    "start": "npm start --prefix backend",
+    "install-all": "npm install && npm install --prefix backend && npm install --prefix frontend",
+    "postinstall": "npm run build"
+  },
+  "keywords": ["react", "express", "sqlite", "jwt", "task-manager"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

@@ -1,0 +1,140 @@
+.projects-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.projects-header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #111827;
+}
+
+.projects-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 24px;
+}
+
+.project-form-card,
+.project-list-card {
+  background: white;
+  border-radius: 16px;
+  padding: 26px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+}
+
+.project-form-card h2,
+.project-list-card h2 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #111827;
+}
+
+.project-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project-form label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.project-form input,
+.project-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #1f2937;
+  resize: vertical;
+}
+
+.project-form input:focus,
+.project-form textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.08);
+}
+
+.project-list {
+  display: grid;
+  gap: 16px;
+}
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: #f8fafc;
+}
+
+.project-item h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #111827;
+}
+
+.project-item p {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.project-meta {
+  color: #6366f1;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.alert {
+  padding: 14px 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.alert-error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.alert-success {
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.loading {
+  color: #475569;
+}
+
+@media (max-width: 960px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
