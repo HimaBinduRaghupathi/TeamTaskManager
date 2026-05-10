@@ -2,6 +2,10 @@
 
 A full-stack web application for managing projects and tasks with role-based access control (Admin/Member).
 
+## 🚀 Live Demo
+
+**[View Live Application](https://your-railway-app-url.vercel.app)** *(Replace with your actual Railway URL after deployment)*
+
 ## 🎯 Features
 
 - ✅ User Authentication (Signup/Login)
@@ -26,6 +30,43 @@ A full-stack web application for managing projects and tasks with role-based acc
 - React Router for navigation
 - Axios for API calls
 - CSS for styling
+
+## 🌐 Railway Deployment
+
+### Step 1: Push to GitHub
+```bash
+# Create a new repository on GitHub
+# Then push your code:
+git remote add origin https://github.com/yourusername/team-task-manager.git
+git branch -M main
+git push -u origin main
+```
+
+### Step 2: Deploy on Railway
+
+1. **Create Railway Account**
+   - Go to [Railway.app](https://railway.app) and sign up/login
+
+2. **Connect Repository**
+   - Click "New Project" → "Deploy from GitHub repo"
+   - Connect your GitHub account and select the repository
+
+3. **Configure Environment Variables**
+   - Go to your project settings → Variables
+   - Add these variables:
+     ```
+     NODE_ENV=production
+     JWT_SECRET=your_super_secure_jwt_secret_key_here
+     DATABASE_PATH=./database.db
+     ```
+
+4. **Deploy**
+   - Railway will automatically detect and deploy your app
+   - The build process will install dependencies and build the frontend
+   - Your app will be live at the generated Railway URL
+
+### Step 3: Update Live Demo URL
+- After deployment, update the "Live Demo" link above with your Railway URL
 
 ## 📁 Project Structure
 
