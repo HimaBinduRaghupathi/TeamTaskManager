@@ -26,8 +26,12 @@ app.use('/api/projects', require('./routes/projects'));
 app.use('/api/tasks', require('./routes/tasks'));
 app.use('/api/users', require('./routes/users'));
 
-// Catch all handler: send back React's index.html file for client-side routing
+// Serve static files and catch-all handler only in production
 if (process.env.NODE_ENV === 'production') {
+  // Serve static files from the React app build directory
+  app.use(express.static(path.join(__dirname, '../../frontend/dist')));
+
+  // Catch all handler: send back React's index.html file for client-side routing
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../../frontend/dist/index.html'));
   });
